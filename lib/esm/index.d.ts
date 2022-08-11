@@ -1,4 +1,4 @@
-import { OnlineWrapper, OfflineWrapper } from "./Wrappers";
+import { OnlineWrapper, OfflineWrapper } from "./Wrappers.js";
 declare const useConnection: (data?: {
     pollingIntreval: number;
 }) => {
