@@ -1,8 +1,7 @@
 # react-neti
 
-This tool is for handling the network connectivity checks, developed based on hooks,
-
-It checks the network connectivity status of your device in real time through polling.
+This tool was created using hooks to handle network connectivity checks.
+It uses polling to check the network connectivity status of your device in real time.
 
 # Example
 
