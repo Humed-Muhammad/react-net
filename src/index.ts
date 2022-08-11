@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import isOnline from "is-online";
-import { OnlineWrapper, OfflineWrapper } from "./Wrappers.js";
+import { OnlineWrapper, OfflineWrapper } from "./Wrappers";
 
 const useConnection = (
   data: { pollingIntreval: number } = { pollingIntreval: 1500 }
