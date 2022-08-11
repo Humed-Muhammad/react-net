@@ -1,9 +1,30 @@
 {
-  "name": "react-net",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "react-neti",
+  "version": "1.0.7",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "type": "module",
+  "files": [
+    "/lib"
+  ],
   "license": "MIT",
+  "scripts": {
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
+  },
   "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "is-online": "^10.0.0",
+    "react": "file:../node_modules/react",
+    "react-dom": "file:../node_modules/react-dom",
     "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "is-online": "^10.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
