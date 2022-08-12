@@ -1,17 +1,12 @@
 import React from "react";
 import { useConnection } from ".";
+import { OnlineNetiProps } from "./types";
 
-interface OnlineNetiProps {
-  pollingIntreval?: number;
-  style?: React.CSSProperties;
-  className?: string;
-  children?: JSX.Element | JSX.Element[] | string | number;
-}
 export const OnlineWrapper = ({
   children,
   className,
   style,
-  pollingIntreval = 700,
+  pollingIntreval = 500,
 }: OnlineNetiProps) => {
   const { connection } = useConnection({
     pollingIntreval,
