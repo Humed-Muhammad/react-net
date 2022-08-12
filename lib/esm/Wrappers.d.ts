@@ -3,7 +3,7 @@ interface OnlineNetiProps {
     pollingIntreval?: number;
     style?: React.CSSProperties;
     className?: string;
-    children?: JSX.Element | JSX.Element[];
+    children?: JSX.Element | JSX.Element[] | string | number;
 }
 export declare const OnlineWrapper: ({ children, className, style, pollingIntreval, }: OnlineNetiProps) => JSX.Element;
 export declare const OfflineWrapper: ({ children, className, style, pollingIntreval, }: OnlineNetiProps) => JSX.Element;

@@ -3,7 +3,7 @@ import isOnline from "is-online";
 import { OnlineWrapper, OfflineWrapper } from "./Wrappers";
 
 const useConnection = (
-  data: { pollingIntreval: number } = { pollingIntreval: 1500 }
+  data: { pollingIntreval: number } = { pollingIntreval: 1000 }
 ) => {
   const [connection, setConnection] = useState<boolean>();
   useEffect(() => {

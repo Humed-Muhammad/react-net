@@ -5,13 +5,13 @@ interface OnlineNetiProps {
   pollingIntreval?: number;
   style?: React.CSSProperties;
   className?: string;
-  children?: JSX.Element | JSX.Element[];
+  children?: JSX.Element | JSX.Element[] | string | number;
 }
 export const OnlineWrapper = ({
   children,
   className,
   style,
-  pollingIntreval = 1500,
+  pollingIntreval = 700,
 }: OnlineNetiProps) => {
   const { connection } = useConnection({
     pollingIntreval,
