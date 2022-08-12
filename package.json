@@ -1,9 +1,10 @@
 {
   "name": "react-neti",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
+  "keywords": ["react", "react hooks", "typescript", "network check","react network check"],
   "files": [
     "/lib"
   ],

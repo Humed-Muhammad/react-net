@@ -1,6 +1,6 @@
 # react-neti
 
-This tool was created using hooks to handle network connectivity checks.
+This tool was created using react hooks and typescript to handle network connectivity checks.
 It uses polling to check the network connectivity status of your device in real time.
 
 # Example
@@ -23,7 +23,6 @@ export const App = () => {
 import React from "react";
 import { OnlineWrapper, OfflineWrapper } from "react-neti";
 export const App = () => {
-  const { connection } = useConnection();
   return (
     <>
       <OnlineWrapper>
