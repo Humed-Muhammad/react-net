@@ -3,7 +3,7 @@
 This tool was created using react hooks and typescript to handle network connectivity checks.
 It uses polling to check the network connectivity status of your device in real time.
 
-It is also build using rollup and complile to support both esm and cjs.
+It is also build using rollup and compliled to support both esm and cjs.
 
 [Github repository](https://github.com/Humed-Muhammad/react-net)
 
