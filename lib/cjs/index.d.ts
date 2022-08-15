@@ -1,7 +1,3 @@
 import { OnlineWrapper, OfflineWrapper } from "./Wrappers";
-declare const useConnection: (data?: {
-    pollingIntreval: number;
-}) => {
-    connection: boolean | undefined;
-};
+import { useConnection } from "./useConnection";
 export { useConnection, OnlineWrapper, OfflineWrapper };
