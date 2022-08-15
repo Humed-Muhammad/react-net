@@ -39,34 +39,3 @@ export const App = () => {
   );
 };
 ```
-
-# Styling and Class Name
-
-```tsx
-import React from "react";
-import { OnlineWrapper, OfflineWrapper } from "react-neti";
-export const App = () => {
-  return (
-    <>
-      <OnlineWrapper
-        className="my-class-name"
-        style={{
-          width: "100%",
-          backgroundColor: " gray",
-        }}
-      >
-        I will appear only when there is internet connection available
-      </OnlineWrapper>
-      <OfflineWrapper
-        className="my-class-name"
-        style={{
-          width: "100%",
-          backgroundColor: " gray",
-        }}
-      >
-        I will appear only when there is no internet connection
-      </OfflineWrapper>
-    </>
-  );
-};
-```
