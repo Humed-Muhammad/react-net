@@ -16,9 +16,9 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "yarn build:esm && yarn build:cjs",
-    "build:esm": "rimraf lib && tsc && rollup -c rollup.config.js",
-    "build:cjs":"rimraf lib && tsc --module commonjs --outDir lib/cjs && rollup -c rollup.config.js"
+    "build": "yarn build:esm && yarn build:cjs && rollup -c rollup.config.js",
+    "build:esm": "rimraf lib && tsc",
+    "build:cjs": "rimraf lib && tsc --module commonjs --outDir dist/cjs"
   },
   "devDependencies": {
     "@open-wc/building-rollup": "^2.0.2",
@@ -30,6 +30,7 @@
     "react-dom": "^18.2.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.78.0",
+    "rollup-plugin-typescript2": "^0.32.1",
     "typescript": "^4.7.4"
   },
   "peerDependencies": {
