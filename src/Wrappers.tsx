@@ -1,5 +1,5 @@
 import React from "react";
-import { useConnection } from ".";
+import { useConnection } from "./useConnection";
 import { OnlineNetiProps } from "./types";
 
 export const OnlineWrapper = ({

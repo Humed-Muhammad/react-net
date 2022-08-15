@@ -1,25 +1,37 @@
 {
   "name": "react-neti",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
-  "keywords": ["react", "react hooks", "typescript", "network check","react network check"],
+  "keywords": [
+    "react",
+    "react hooks",
+    "typescript",
+    "rollup",
+    "network check",
+    "react network check"
+  ],
   "files": [
     "/lib"
   ],
   "license": "MIT",
   "scripts": {
-    "build": "yarn build:esm && yarn build:cjs",
+    "build": "yarn rimraf lib && yarn build:esm && yarn build:cjs && rollup -c rollup.config.js",
     "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
   },
   "devDependencies": {
+    "@open-wc/building-rollup": "^2.0.2",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "deepmerge": "^4.2.2",
     "is-online": "^10.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.78.0",
+    "rollup-plugin-typescript2": "^0.32.1",
     "typescript": "^4.7.4"
   },
   "peerDependencies": {
