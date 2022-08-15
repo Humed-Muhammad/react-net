@@ -5,6 +5,8 @@ It uses polling to check the network connectivity status of your device in real 
 
 It is also build using rollup and compliled to support both esm and cjs.
 
+Improvement in "1.2.3" version deacrease size by 50%
+
 [Github repository](https://github.com/Humed-Muhammad/react-net)
 
 # Example
