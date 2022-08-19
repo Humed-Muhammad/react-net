@@ -1,6 +1,6 @@
 declare const useConnection: (data?: {
     pollingIntreval: number;
 }) => {
-    connection: boolean | undefined;
+    connection: boolean;
 };
 export { useConnection };
