@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import isOnline from "is-online";
 
 const useConnection = (
-  data: { pollingIntreval: number } = { pollingIntreval: 1500 }
+  data: { pollingIntreval: number } = { pollingIntreval: 500 }
 ) => {
-  const [connection, setConnection] = useState<boolean>();
+  const [connection, setConnection] = useState<boolean>(true);
   useEffect(() => {
     const getConnection = async () => {
       const result: boolean = await isOnline();

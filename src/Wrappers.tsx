@@ -6,7 +6,7 @@ export const OnlineWrapper = ({
   children,
   className,
   style,
-  pollingIntreval = 1500,
+  pollingIntreval = 500,
 }: OnlineNetiProps) => {
   const { connection } = useConnection({
     pollingIntreval,
