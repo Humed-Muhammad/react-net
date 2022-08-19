@@ -1,9 +1,8 @@
 # react-neti
 
-This tool was created using react hooks and typescript to handle network connectivity checks.
-It uses polling to check the network connectivity status of your device in real time.
+This tool was created using react hooks, typescript and bundled using rollup to handle network connectivity checks.It uses polling to check the network connectivity status of your device in real time.
 
-It is also bundled using rollup and compliled to support both esm and cjs modules.
+.
 
 [Github repository](https://github.com/Humed-Muhammad/react-net)
 
@@ -16,7 +15,8 @@ import React from "react";
 import { useConnection } from "react-neti";
 
 export const App = () => {
-  const { connection } = useConnection();
+  // pollingIntreval optional parameter
+  const { connection } = useConnection({ pollingIntreval: 1000 });
   return <div>{connection ? "Online" : "Offline"}</div>;
 };
 ```
@@ -24,6 +24,7 @@ export const App = () => {
 ## Components
 
 ```tsx
+//  Accept pollingIntreval prop
 import React from "react";
 import { OnlineWrapper, OfflineWrapper } from "react-neti";
 export const App = () => {
@@ -43,12 +44,13 @@ export const App = () => {
 ## Styling
 
 ```tsx
+// Accept pollingIntreval prop
 return (
   <div>
-    <OnlineWrapper styling={...your - style} className="your className">
+    <OnlineWrapper style={...your - style} className="your className">
       I will appear only when there is internet connection available
     </OnlineWrapper>
-    <OfflineWrapper styling={...your - style} className="your className">
+    <OfflineWrapper style={...your - style} className="your className">
       I will appear only when there is no internet connection
     </OfflineWrapper>
   </div>

@@ -21,18 +21,18 @@ export default merge(baseConfig, [
       }),
     ],
   },
-  {
-    input: "./dist/cjs/index.js",
-    output: {
-      dir: "lib/cjs",
-      format: "cjs",
-    },
-    context: "window",
-    plugins: [
-      typescript({
-        rollupCommonJSResolveHack: false,
-        clean: true,
-      }),
-    ],
-  },
+  // {
+  //   input: "./dist/cjs/index.js",
+  //   output: {
+  //     dir: "lib/cjs",
+  //     format: "cjs",
+  //   },
+  //   context: "window",
+  //   plugins: [
+  //     typescript({
+  //       rollupCommonJSResolveHack: false,
+  //       clean: true,
+  //     }),
+  //   ],
+  // },
 ]);

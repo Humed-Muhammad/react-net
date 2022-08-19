@@ -1,7 +1,7 @@
 {
   "name": "react-neti",
-  "version": "1.2.4",
-  "main": "./lib/cjs/index.js",
+  "version": "1.2.5",
+  "main": "./lib/esm/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
   "keywords": [
@@ -17,9 +17,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "yarn rimraf lib && yarn build:esm && yarn build:cjs && rollup -c rollup.config.js",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+    "build": "yarn rimraf lib && yarn build:esm && rollup -c rollup.config.js",
+    "build:esm": "tsc"
   },
   "devDependencies": {
     "@open-wc/building-rollup": "^2.0.2",
