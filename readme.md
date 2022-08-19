@@ -41,18 +41,16 @@ export const App = () => {
 };
 ```
 
-## Styling
+## Styling and props
 
 ```tsx
 // Accept pollingIntreval prop
+// children can be component | number | string
 return (
   <div>
     <OnlineWrapper style={...your - style} className="your className">
-      I will appear only when there is internet connection available
+      <YourComponent />
     </OnlineWrapper>
-    <OfflineWrapper style={...your - style} className="your className">
-      I will appear only when there is no internet connection
-    </OfflineWrapper>
   </div>
 );
 ```
